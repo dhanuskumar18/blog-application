@@ -7,7 +7,8 @@ const app = express();
 app.use(express.static("public"));
 app.use(bodyparser.urlencoded({ extended: true }));
 
-const url = "mongodb://127.0.0.1:27017/std";
+const url = "mongodb+srv://dhanuskumar18:5oUyxhBnuLoiLX71@learnhub.py5qs.mongodb.net/blogapp?retryWrites=true&w=majority&appName=LearnHub";
+
 mongoose
   .connect(url)
   .then(() => {
